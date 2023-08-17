@@ -2,7 +2,7 @@ const admin = require('firebase-admin');
 const adminSchema = require('../schema/adminSchema');
 
 // Initialize Firebase Admin SDK using the service account JSON
-const serviceAccount = require('C:\\Users\\priya\\DoodleArts_Backend\\serviceAccountKey.json');
+const serviceAccount = require('../serviceAccountKey.json');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
