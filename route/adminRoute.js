@@ -3,14 +3,20 @@ const router = express.Router();
 const controller = require('../controller/adminController');
 
 // Define the POST route for creating data
-router.post('/addadmin', controller.addUser);
+router.post('/adduser', controller.addUser);
 
-router.get('/getalladmin', controller.getAllAdmin);
+router.get('/getalluser/:role', controller.getAllUser);
 
-router.get('/getadmin/:email', controller.getAdminByEmail);
+router.get('/getuser/email/:email', controller.getAdminByEmail);
 
-router.patch('/updateadmin/:email', controller.updateAdminByEmail);
+router.get('/getuser/uuid/:uuid', controller.getAdminByUUID);
 
-router.delete('/deleteadmin/:email', controller.deleteAdminByEmail);
+router.patch('/updateuser/email/:email', controller.updateAdminByEmail);
+
+router.patch('/updateuser/uuid/:uuid', controller.updateAdminByUUID);
+
+router.delete('/deleteuser/email/:email', controller.deleteAdminByEmail);
+
+router.delete('/deleteuser/uuid/:uuid', controller.deleteAdminByUUID);
 
 module.exports = router;
