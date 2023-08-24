@@ -18,10 +18,10 @@ module.exports.addSuperAdmin = async (req, res) => {
         const body = {
             dob: "07/06/2001",
             email: "priyamol761@gmail.com",
-            firstname: "Admin",
+            firstname: "Priyanka",
             gender: "Female",
-            lastname: "Admin",
-            password: "D00dl3@rts",
+            lastname: "S",
+            password: "D00dl3@rt5",
             phonenumber: "8680812838",
             role: "superadmin"
         }
